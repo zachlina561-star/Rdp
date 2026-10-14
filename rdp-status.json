@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "rdpfree-4",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -43,9 +43,10 @@
     "tailscale": {
       "status": "ok",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.90.143.102",
-      "hostname": "rdpfree-4",
-      "magicdns": "rdpfree-4.tail26e7e2.ts.net."
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     }
   },
   "media": {
@@ -53,5 +54,95 @@
     "wallpaper": "xyverse_configured_for_user_logon",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled"
-  }
+  },
+  "storage": {
+    "boost": "ok",
+    "before_gb": 81.94,
+    "after_gb": 106.49,
+    "gained_gb": 24.55,
+    "removed_targets": 19,
+    "drives": [
+      {
+        "size_gb": 255.45,
+        "used_gb": 148.96,
+        "letter": "C",
+        "free_gb": 106.49
+      },
+      {
+        "size_gb": 150.0,
+        "used_gb": 2.99,
+        "letter": "D",
+        "free_gb": 147.01
+      }
+    ],
+    "game_dir": "D:\\Games (disarankan untuk GTA)",
+    "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa."
+  },
+  "grafis": {
+    "note": "Optional isolated CPU renderer files; not activated or benchmarked.",
+    "mesa": "26.2.4",
+    "mode": "toolkit_only",
+    "adapters": "Microsoft Hyper-V Video"
+  },
+  "extras": {
+    "lightshot": "ok",
+    "translucent": "disabled",
+    "wallpaper": "ok",
+    "wallpaper_file": "wallpaper.jpg",
+    "vscode": "skip",
+    "notepadpp": "skip",
+    "admin": true
+  },
+  "samp": {
+    "directplay": "Enabled",
+    "status": "dependencies_ready",
+    "samp_installed": false,
+    "vcredist": "verified_x86_x64_and_2013_x86",
+    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+    "directx": "verified_x86_x64",
+    "gta_installed": false,
+    "netfx3": "Enabled",
+    "play_tested": false
+  },
+  "games": {
+    "minecraft_java": {
+      "status": "installer_ready",
+      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan.",
+      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
+      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi"
+    },
+    "minecraft_bedrock": {
+      "status": "unsupported_environment",
+      "note": "Bedrock membutuhkan Windows desktop dengan Microsoft Store/Xbox. Windows Server bukan target yang didukung setup ini."
+    },
+    "samp": {
+      "status": "dependencies_ready",
+      "gta_installed": false,
+      "samp_installed": false,
+      "game_dir": null,
+      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
+    },
+    "roblox": {
+      "status": "unsupported_environment",
+      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini."
+    }
+  },
+  "game_environment": {
+    "windows_server": true,
+    "runner": "windows-2022",
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "play_tested": false,
+    "hypervisor_present": true
+  },
+  "host_tools": {
+    "winrar": "verified 7.23.0 (vendor trial; license not included)",
+    "vcredist": "verified_current_v14_x86_x64",
+    "xampp": "failed",
+    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
+    "errors": [
+      "XAMPP: Installer SHA256 mismatch; execution refused"
+    ],
+    "public_port": false
+  },
+  "stopped_at": "2026-10-14T18:30:31Z"
 }
